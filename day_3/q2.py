@@ -8,4 +8,4 @@ for char in _string:
         freq[char] = 1
 
 for element in freq:
-    print(f"The frequency of '{element}' is {freq.get(element)}")
+    print(f"'{element}': {freq.get(element)}")
