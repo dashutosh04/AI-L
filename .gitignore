@@ -211,3 +211,8 @@ __marimo__/
 
 test.csv
 train.csv
+
+#csv
+
+*.csv
+*.txt
