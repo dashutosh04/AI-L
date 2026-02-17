@@ -14,6 +14,9 @@ with open("stop-words-list.txt", "r", encoding="latin-1") as f:
 trainingfile = pd.read_csv("train.csv", encoding="latin-1")
 testfile = pd.read_csv("test.csv", encoding="latin-1")
 
+dim_of_file = trainingfile.shape[0]
+
+print("Total number of rows:", dim_of_file)
 
 trainingfile = trainingfile[["text", "sentiment"]].dropna()
 testfile = testfile[["text", "sentiment"]].dropna()

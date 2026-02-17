@@ -9,7 +9,7 @@ MAZE = [
 ]
 
 START = (0, 0)
-END = (4, 6)
+END = (4, 4)
 
 def maze_print(maze):
     for i in range(len(maze)):
@@ -55,3 +55,5 @@ print("\n--- BFS ---")
 bfs_path, bfs_nodes = bfs(MAZE, START, END)
 print("BFS Path:", bfs_path)
 print("BFS Nodes Explored:", bfs_nodes)
+
+
