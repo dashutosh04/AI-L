@@ -92,6 +92,14 @@ def compare_algorithms(maze, start, end):
     print("BFS Nodes Explored:", bfs_nodes)
     print("DFS Path:", dfs_path)
     print("DFS Nodes Explored:", dfs_nodes)
+    if bfs_path and dfs_path:
+        print("BFS Path Length:", len(bfs_path))
+        print("DFS Path Length:", len(dfs_path))
+        if len(bfs_path) < len(dfs_path):
+            print("BFS found a shorter path.")
+        elif len(bfs_path) > len(dfs_path):
+            print("DFS found a shorter path.")
+    
 
 
 def plot_paths(maze, bfs_path, dfs_path):
